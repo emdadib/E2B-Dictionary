@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="body.master.cs" Inherits="E2B_Online_Dictionary.body" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/overwrite.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <header class="jumbotron">
+            <h1 class="h1 text-center text-danger" style="color:greenyellow; font-weight:bolder"> ENGLISH TO <span>BENGALI</span> Online Dictionary </h1></header>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
+                        <span class="sr-only">E2B Dictionary</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Home.aspx">Home</a></li>
+                        <li><a href="Home.aspx">English To Bangla</a></li>
+                        <li><a href="B2E.aspx">Bangla To English</a></li>
+                        <li><a href="Word Bank.aspx">Word Bank</a></li>
+                        <li><a href="Add Word.aspx">Add Word</a></li>
+                        <li><a href="ContactUS.aspx">Contact US</a></li>
+                        <li><a href="About.aspx">About ME</a></li>
+                        <li><a href="SingUp.aspx">Sign UP</a></li>
+                        <li><a href="Login.aspx">Login</a></li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <form id="form1" runat="server" class="form-horizontal">
+            <div class="row">
+
+                <main class="col-sm-9">
+                    <asp:ContentPlaceHolder ID="mainPlaceholder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </main>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+            <footer class="text-center text-info">
+                <asp:ContentPlaceHolder ID="footerPlaceHolder" runat="server">
+                    <div class="panel-footer">
+
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>English To Bangla Dictionary</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </asp:ContentPlaceHolder>
+            </footer>
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>

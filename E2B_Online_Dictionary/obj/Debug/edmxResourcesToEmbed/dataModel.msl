@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dictionaryModelStoreContainer" CdmEntityContainer="dictionaryEntities">
+    <EntitySetMapping Name="words">
+      <EntityTypeMapping TypeName="dictionaryModel.word">
+        <MappingFragment StoreEntitySet="words">
+          <ScalarProperty Name="C_id" ColumnName="_id" />
+          <ScalarProperty Name="en_word" ColumnName="en_word" />
+          <ScalarProperty Name="bn_word" ColumnName="bn_word" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="user_created" ColumnName="user_created" />
+          <ScalarProperty Name="TRIAL254" ColumnName="TRIAL254" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
